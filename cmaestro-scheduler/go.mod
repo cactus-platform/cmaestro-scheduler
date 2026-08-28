@@ -1,3 +1,3 @@
-module github.com/cactus-platform/scheduler
+module github.com/cactus-platform/cmastro-scheduler
 
 go 1.26.3
