@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/cactus-platform/scheduler/internal/bootstrap"
+	"github.com/cactus-platform/cmaestro-scheduler/internal/bootstrap"
 )
 
 func main() {

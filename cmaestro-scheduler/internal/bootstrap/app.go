@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/cactus-platform/scheduler/internal/bootstrap/collection"
-	"github.com/cactus-platform/scheduler/internal/config"
+	"github.com/cactus-platform/cmaestro-scheduler/internal/bootstrap/collection"
+	"github.com/cactus-platform/cmaestro-scheduler/internal/config"
 )
 
 type App struct {

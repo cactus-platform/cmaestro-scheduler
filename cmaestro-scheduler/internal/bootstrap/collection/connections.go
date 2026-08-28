@@ -5,7 +5,7 @@ import (
 	"errors"
 	"log"
 
-	"github.com/cactus-platform/scheduler/internal/config"
+	"github.com/cactus-platform/cmaestro-scheduler/internal/config"
 )
 
 type Connections struct {

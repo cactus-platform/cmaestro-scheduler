@@ -3,7 +3,7 @@ package collection
 import (
 	"context"
 
-	"github.com/cactus-platform/scheduler/internal/config"
+	"github.com/cactus-platform/cmaestro-scheduler/internal/config"
 )
 
 type Repositories struct {
