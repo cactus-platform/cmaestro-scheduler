@@ -1,7 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"context"
+	"fmt"
+	"log"
+
+	"github.com/cactus-platform/scheduler/internal/bootstrap"
+)
 
 func main() {
-	fmt.Println("Scheduler")
+	ctx := context.Background()
+	app, err := bootstrap.NewFromEnv(ctx)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("App:", app)
 }
