@@ -7,6 +7,11 @@ on:
 
 permissions:
   contents: write
+  
+env:
+  BIN_NAME: cmaestro-scheduler
+  BIN_FOLDER: bin
+  PACKAGE_PATH: cmaestro-scheduler/cmd/scheduler
 
 jobs:
   build:
@@ -23,7 +28,7 @@ jobs:
           cache: true
 
       - name: Build
-        run: go build ./cmaestro-scheduler/...
+        run: go build -v -o $BIN_FOLDER/$BIN_NAME $PACKAGE_PATH
 
   release:
     needs: build
