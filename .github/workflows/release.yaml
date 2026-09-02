@@ -27,7 +27,10 @@ jobs:
           go-version-file: cmaestro-scheduler/go.mod
           cache: true
 
-      - name: Build
+      - name: Create Build Directory
+        run: mkdir $BIN_FOLDER
+
+      - name: Build Cmaestro-Scheduler
         run: go build -v -o $BIN_FOLDER/$BIN_NAME $PACKAGE_PATH
 
   release:
